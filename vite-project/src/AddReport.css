@@ -1,0 +1,85 @@
+.add-report-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Label styling */
+.add-report-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input, select, textarea styling */
+.add-report-form input[type="text"],
+.add-report-form input[type="date"],
+.add-report-form select,
+.add-report-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.add-report-form textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.add-report-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-report-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Form group container for each label + input pair */
+.form-group {
+  display: flex;
+  flex-direction: column; /* fallback/mobile */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .form-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-group label {
+    flex: 0 0 150px; /* fixed label width */
+    margin-bottom: 0;
+    text-align: right;
+    margin-right: 15px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    flex: 1;
+  }
+}
+
+ 
